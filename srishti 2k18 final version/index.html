@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <title>Srishti 2k18 | LNCT</title>
+  <link rel="shortcut icon" href="images/favilogo.ico" >
+  <style type="text/css">
+    *{
+      box-sizing: border-box;
+      font-weight: bold;
+      font-family: 'Yatra One', cursive;
+    }
+    .v-header1{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    color:#fff;
+    }
+    .container1{
+      max-width:960px;
+      padding-left:1rem;
+      padding-right:1rem;
+      margin:auto;
+      text-align:center;
+    }
+    .fullscreen-video-wrap1{
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100vh;
+      overflow:hidden;
+    }
+    .fullscreen-video-wrap1 video{
+      min-height:100%;
+      min-width:100%;
+    }
+    .header-overlay1{
+      height:100vh;
+      position: absolute;
+      top:0;
+      left:0;
+      width:100vw;
+      z-index:1;
+      opacity:0.85;
+    }
+    .header-content1{
+      z-index:2;
+    }
+    .header-content1 h1{
+      font-size:50px;
+      margin-bottom:0;
+    }
+    .header-content1 p{
+      font-size:1.5rem;
+      display:block;
+      padding-bottom:2rem;
+    }
+    .btn{
+      background: #34b3a0;
+      color:#fff;
+      font-size:1.2rem;
+      padding: 1rem 2rem;
+      text-decoration: none;
+    }
+    #core-team,#events,#motivation,#testimonials,#footer,#srishtiposter,#coreteam{
+      background-image:url("images/overallBackground.jpg");
+    }
+      #event,#Gallery,#faq,#client,#reach,#news{
+      background-image:url("images/overallBackground.jpg");
+    }
+    #demo {
+      font-weight:bold;
+      color: #fff;
+      text-align: center;
+      font-size: 60px;
+      margin-top: 0px;
+    }
+    @media(max-width:960px){
+      .container{
+        padding-right:3rem;
+        padding-left:3rem;
+      }
+    }
+    #dem {
+      opacity: 0.5;
+      filter: alpha(opacity=50);
+    }
+    @media(max-width:768px){
+      #faq .container .row .col-xs-12 .not-display{
+      display:none;
+      }
+    }
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: green;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+    #myBtn:hover {
+      background-color: #555;
+    }
+    html{
+    font-weight:bold;font-family: 'Yatra One', cursive;
+      font-weight: 200;
+    }
+    h1, h2, h3, h4 ,h5 ,h6, p{
+      margin: 0;
+      padding: 0;
+    }
+    body *{
+      -webkit-box-sizing: border-box;
+          font-weight:bold;font-family: 'Yatra One', cursive;
+      box-sizing: border-box;
+    }
+    .testimonials{
+      padding-bottom: 2.2em;
+      text-align: center;
+      color: #666;
+    }
+    .testimonials h1{
+      color: #222;
+      font-size: 1.3em;
+    }
+    .testimonials .test-body{padding: 1em;}
+    .testimonials .item{
+      text-align: center;
+      padding: 1em 0;
+    }
+    .testimonials img{
+      width: 4.8em;
+      height: 4.8em;
+      border-radius: 50%;
+    }
+    .testimonials .name{color: blue;}
+    .testimonials .desig{
+      font-size: 0.7em;
+      padding: 0.5em 0;
+      color: #777;
+    }
+    .testimonials .share{
+      margin: 0 auto;
+      width: 5em;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+    .testimonials i{
+      color: #bfbfbf;
+      padding: 0.5em 0;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+    .testimonials i:hover{color: blue;}
+    .testimonials p{
+      max-width: 27em;
+      margin: 0 auto;
+      font-size: 0.8em;
+    }
+    .testimonials button{
+      font-size: 1em;
+      background-color: blue;
+      color: white;
+      padding: 0.8em 2em;
+      border-radius: 2em;
+      border: 0;
+      cursor: pointer;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+    .testimonials button:hover{
+      background-color: #444;
+    }
+    @media (min-width: 38.4rem){
+      testimonials{
+        font-size: 1.2em;
+      }
+      .testimonials .test-body{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+      .testimonials p{
+        text-align: left;
+        padding: 1em;
+      }
+    }
+    #hello-intro h2 {
+    	font-family: 'Montserrat', sans-serif;
+    	font-weight: 700;
+    	font-size: 42px;
+    	color: #ffcc33;
+    	text-transform: uppercase;
+    	border-bottom: 1px solid #6dd5ed ;
+    	margin-bottom: 60px;
+    	display: block;
+    }
+    #hello-intro h3 {
+    	font-family: 'Roboto', sans-serif;
+    	font-weight: 100;
+    	font-size: 25px;
+    	color: #b0b0b0;
+    }
+    #hello-intro h3 strong {
+    	font-weight: 300;
+    }
+#coun{
+  a:hover{
+    text-decoration:none;
+  }
+}
+@media (max-width: 768px){
+  #srishtiposter
+  {
+    display:none;
+  }
+
+  }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+@media screen and (max-device-width: 1980px) and (min-device-width:500px){
+    #video-background-small {
+        display:none;
+    }
+    #srishtititle{
+	font-size:8vw;
+    }
+    #srishtislogan{
+	font-size:3vw;
+    }
+    #faicon{
+        font-size:4vw;
+    }
+  }
+  @media screen and (max-device-width: 499px) {
+      #video-background-large {
+          display:none;
+      }
+    #srishtititle{
+	font-size:10vw;
+    }
+    #srishtislogan{
+	font-size:5vw;
+    }
+    #faicon{
+        font-size:7vw;
+    }
+    }
+    .frame {
+ 	text-align: center;
+ 	position: relative;
+ 	cursor: pointer;
+ 	perspective: 500px;
+ }
+ .frame img {
+ 	width: 100%;
+ 	height:100%;
+ }
+ .frame .details {
+ 	width: 70%;
+ 	height: 80%;
+ 	padding: 5% 8%;
+ 	position: absolute;
+ 	content: "";
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%) rotateY(90deg);
+ 	transform-origin: 50%;
+ 	background: rgb(242, 211, 133);
+ 	opacity: 0;
+ 	transition: all 0.4s ease-in;
+
+ }
+ .frame:hover .details {
+ 	transform: translate(-50%, -50%) rotateY(0deg);
+ 	opacity: 1;
+ }
+
+  </style>
+
+  <!-- Basic Page Needs ================================================== -->
+
+  <link rel="stylesheet" href="css/index.css">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/colorbox.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/color.css">
+  <link rel="stylesheet" href="css/transitions.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+       crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="simple-line-icons1.css">
+  <link rel="stylesheet" type="text/css" href="css/slicknav1.css">
+  <link rel="stylesheet" type="text/css" href="css/nivo-lightbox1.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel1.css">
+  <link rel="stylesheet" type="text/css" href="css/default1.css" media="screen" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/gallery.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.1.99/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/cards.css">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!--  adasdsadasd-->
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://thenahid.com/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="css/test.css">
+  <link rel="stylesheet" href="css/sponsor.css">
+  <!-- PEOPle's section css -->
+   <!-- <link rel="stylesheet" href="css/iconfont.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ourteam.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">-->
+
+
+
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+</head>
+
+<body onload="preloaderFunction()">
+  <div id="loading">
+   <h2 class="text-center" style="margin-bottom:10px;" ><br><br><br><strong>Welcome To Srishti 2K18.</strong></h2>
+  </div>
+    <a href="#home" class="uruna" ><button type="button" onclick="topFunction()" id="myBtn" class="btn btn-success btn-up-footer btn-lg scroll-top ">Up</button></a>
+
+      <!-- HEADER STARTS -->
+      <header id="header" class="header header-transparent">
+        <div class="container">
+          <div class="row">
+            <div class="navbar-header">
+              <div class="logo">
+                <a href="https://www.lnct.ac.in/" target="_blank">
+                  <img src="images/logo.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="site-nav-inner ">
+              <!-- <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#" aria-expanded="false"> -->
+                <!-- <span class="sr-only">Toggle navigation</span> -->
+                <!-- <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> -->
+              </button>
+              <nav class="collapse navbar-collapse pull-right " id="navbarNav">
+                <ul class="nav navbar-nav" style="font-weight:bold;font-family: 'Yatra One', cursive;">
+                  <li class="active" ><a href="#home" class="uruna" style="font-family: 'Yatra One', cursive;" >Home </a></li>
+                  <li ><a href="#about" class=" uruna" style="font-family: 'Yatra One', cursive;">About </a></li>
+                  <li ><a href="#event" class=" uruna"style="font-family: 'Yatra One', cursive;" >Facilities </a></li>
+                  <li><a href="#events" class="uruna" style="font-family: 'Yatra One', cursive;" >Events </a></li>
+                  <li><a href="#Gallery" class="uruna" style="font-family: 'Yatra One', cursive;">Gallery </a></li>
+                  <li><a href="#faq" class="uruna" style="font-family: 'Yatra One', cursive;">FAQ </a></li>
+                  <li><a href="coreteam/index.html" style="font-family: 'Yatra One', cursive;">Core Team </a></li>
+                  <li><a href="#reach" class="uruna" style="font-family: 'Yatra One', cursive;">Reach Us</a></li>
+                  <div class="dropdown">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdGv3pfbP6fFo9C2qIJ9WDfjRI666hzLuQMKauR0eOkNaeqBA/viewform" target="_blank" class="btn uruna"  style="font-weight:bold;">Register here</a><br>
+
+                  </div>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- HEADER ENDS -->
+
+      <!-- HOME STARTS -->
+      <div class="body-inner " id="home">
+        <header class="v-header1 container1">
+          <div class="fullscreen-video-wrap1">
+            <video autoplay loop id="video-background-large" muted plays-inline poster="images/earth.jpg" style="background:transparent no-repeat url('images/earth.jpg'); background-size:30%;">
+
+              <source src="images/home-video.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761" type="video/mp4">
+              </video>
+              <video autoplay loop id="video-background-small" muted plays-inline poster="https://i.pinimg.com/originals/7d/b6/a5/7db6a534485b92e268643a18bd2326b9.gif" style="background:transparent no-repeat url('https://i.pinimg.com/originals/7d/b6/a5/7db6a534485b92e268643a18bd2326b9.gif'); background-size:100%;">
+
+                <source src="images/output2.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761" type="video/mp4">
+                </video>
+            </div>
+            <div class="header-overlay1"></div>
+            <div class="header-content1 d-block float-xs-right" style="margin:auto;">
+              <h1 id="srishtititle" style="color: #f5af19;font-family: 'Yatra One', cursive;" >SRISHTI 2K18</h1>
+              <p id="srishtislogan" style="color:#f5af19;margin-top: 5px;line-height:1em;font-family: 'Yatra One', cursive;">Central India's Largest Technical Fest</p>
+              <a id="faicon" href="https://www.facebook.com/Srishti2k18LNCTGroup/" target="_blank" style="margin-right:8%;color:white;"><span class="fa fa-facebook"></span></a>
+              <a id="faicon" href="https://www.instagram.com/srishti2k18" target="_blank"><span class="fa fa-instagram" style="margin-right:8%;color:white;"></span></a>
+              <a id="faicon" href="mailto:srishtiecofest@lnct.ac.in" target="_blank"><span class="fa fa-google-plus" style="margin-right: 8%;color:white;"></span></a>
+              <a id="faicon" href="https://www.youtube.com/channel/UCpqJSyM0pvp-NXa60PDHj-g"  target="_blank"><span class="fa fa-youtube" style="color:white;margin-right: 8%;"></span></a>
+	      <a id="faicon" href="https://play.google.com/store/apps/details?id=com.lnct.app.srishti2k18" target="_blank"><span class="fa fa-android" style="color:white;"></span></a><br><br>
+              <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdGv3pfbP6fFo9C2qIJ9WDfjRI666hzLuQMKauR0eOkNaeqBA/viewform" target="_blank" style="font-weight:bold;">Register for Events</a><br>
+            </div>
+          </header>
+          <!-- HOME ENDS -->
+
+          <!-- ABOUT STARTS -->
+          <section  class="ts-intro no-padding"   id="about">
+            <div class="container border border-danger" >
+              <div class="row"  >
+                <div class="col-xs-12 col-sm-12 col-md-6" >
+                  <div class="gap-60" ></div>
+                  <h2 class="text-center" style="margin-bottom:10px;" ><strong>About SRISHTI 2K18.</strong></h2>
+                  <p class="intro-desc" style="color:#000;letter-spacing: 0.0625em;">“वर्ष 2006, 2008, 2010, 2013 एवं 2016 में सृष्टि आयोजित करने के उद्देश्य ( पर्यावरण जागरूकता एवं पर्यावरण संरक्षण ) की सफलता के पश्चात एक बार पुनः लक्ष्मीनारायण कॉलेज ऑफ टेक्नोलॉजी ,समूह (एलएनसीटी) आपके लिए शीघ्र ला रहे हैं ,मध्य भारत का सबसे बहुप्रतीक्षित, बहुत ही रोमांचक, राष्ट्रीय स्तरीय "पर्यावरणीय - तकनीकी -सामाजिक - सांस्कृतिक एवं खेलकूद " के  कार्यक्रमों से भरपूर एक युवा - महोत्सव , समागम
+"सृष्टि -2K18"।<br><br>LNCT GROUP OF COLLEGES, fostering the celebration of 25 years of Excellence,presents Central India's most awaited , most anticipated, long enough Techno-Eco-Socio-Cultural & Sports Symposium "SRISHTI 2K18".<br><br>
+Fasten your belts and get ready to be a part of a tantalizing aura full of fervor,ebullience and recreation, with an essence of Sustainable development & Environment Conservation to nurture Mother Earth.<br></p>
+<div class="text-center">
+                  <p class="intro-desc" style="color:#000;letter-spacing: 0.0625em; "><strong>Venue : LNCT Bhopal, Kalchuri Nagar, Raisen Road, Bhopal, Madhya Pradesh 462021 </strong></p>
+                  <p class="intro-desc" style="color:#000;letter-spacing: 0.0625em;"><strong>Venue : JNCT Bhopal, Lambakheda, Bairasia Road, Chouksey Nagar, Bhopal, Madhya Pradesh 462038 </strong></p></div>
+                  <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdGv3pfbP6fFo9C2qIJ9WDfjRI666hzLuQMKauR0eOkNaeqBA/viewform" target="_blank" class="btn btn-primary">Register for Events</a></p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6" >
+                  <div class="intro-video">
+                    <img class="img-responsive" src="images/intro-video.jpg" alt="" />
+                    <a  href="https://youtu.be/YjI-eSN0uXE" target="_blank">
+                      <div class="video-icon">
+                        <i class="fa fa-play"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="gap-30" ></div>
+              <div class="row facts-wrapper">
+                <div class="col-sm-3 col-xs-6">
+                  <div class="ts-facts">
+                    <span class="ts-facts-img">
+                      <img src="images/icons/fact-workshop.png" alt="" />
+                    </span>
+                    <div class="ts-facts-content">
+                      <h2 class="ts-facts-num"><span class="counterUp">40</span></h2>
+                      <h3 class="ts-facts-title">Events</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                  <div class="ts-facts">
+                    <span class="ts-facts-img">
+                      <img src="images/icons/fact-speaker.png" alt="" />
+                    </span>
+                    <div class="ts-facts-content">
+                      <h2 class="ts-facts-num"><span class="counterUp">1200</span></h2>
+                      <h3 class="ts-facts-title">Participants</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                  <div class="ts-facts">
+                    <span class="ts-facts-img">
+                      <img src="images/icons/fact-sponsor.png" alt="" />
+                    </span>
+                    <div class="ts-facts-content">
+                      <h2 class="ts-facts-num"><span class="counterUp">30</span></h2>
+                      <h3 class="ts-facts-title">Sponsors</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                  <div class="ts-facts last">
+                    <span class="ts-facts-img">
+                      <img src="images/icons/fact-country.png" alt="" />
+                    </span>
+                    <div class="ts-facts-content">
+                      <h2 class="ts-facts-num"><span class="counterUp">45</span></h2>
+                      <h3 class="ts-facts-title">Colleges</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--ABOUT ENDS -->
+
+          <!-- SRISHTI BANNER STARTS -->
+          <section id ="srishtiposter" class="section">
+            <div id="hello-intro" class="d-block text-center" >
+              <h2 class="text-center" style="font-weight:bold;font-family: 'Yatra One', cursive;">SRISHTI AT A GLANCE.</h2>
+            </div>
+            <div class = "frame ">
+              <img src = "images/srishtiposter.jpg" style="display: block;margin-left: auto;margin-right: auto;width: 90%;height:500px" class="img-responsive" >
+              <div class = "details">
+                <h2 class="text-center"><strong>Event Location.</strong></h2>
+                <p ><strong>LNCT Bhopal, Kalchuri Nagar, Raisen Road, Bhopal, Madhya Pradesh 462021</strong></p><br>
+                <p ><strong>JNCT Bhopal, Lambakheda, Bairasia Road, Chouksey Nagar, Bhopal, Madhya Pradesh 462038</strong></p>
+                <p ><strong>Register AS SOON AS POSSIBLE</strong></p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Schedule end -->
+
+          <!-- FACILITIES STARTS -->
+          <section id="event" class="section" >
+            <div id="hello-intro" class="d-block text-center" >
+              <h2 class="text-center" style="font-weight:bold;font-family: 'Yatra One', cursive;">EVENT FACILITIES.</h2>
+            </div>
+            <div class="container border border-secondary" >
+              <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 pt-5">
+                  <div class="tab-block wow fadeInDown" data-wow-delay="0s">
+                    <div class="icon" style="padding-top:-4px;">
+                      <i class="icon-location-pin"></i>
+                    </div>
+                    <div class="desc">
+                      <h4>Location</h4>
+                      <p>LNCT Campus, Kalchuri Nagar, Raisen Road Bhopal, Madhya Pradesh (M.P.)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="tab-block wow fadeInDown" data-wow-delay="0.2s">
+                    <div class="icon">
+                      <i class="icon-calendar"></i>
+                    </div>
+                    <div class="desc">
+                      <h4>Date & Time</h4>
+                      <p>9AM - 5PM, 1-3 Nov<br><br></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="tab-block wow fadeInDown" data-wow-delay="0.4s">
+                    <div class="icon">
+                      <i class="icon-microphone"></i>
+                    </div>
+                    <div class="desc">
+                      <h4>Celebrity Night</h4>
+                      <p>2nd Nov, 7pm onwards<br><br></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="tab-block last-block wow fadeInDown" data-wow-delay="0.6s">
+                    <div class="icon">
+                      <i class="icon-wallet"></i>
+                    </div>
+                    <div class="desc left">
+                      <h4>Tickets</h4>
+                      <p>Participate ASAP!!<br></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="content-text">
+                    <h3 class="wow fadeInUp" data-wow-delay="0.8s" >Get fresh insights into the fair of tech, sports and cultural events. </h3>
+                    <p class="wow fadeInUp" data-wow-delay="1s" s>All of you are duly invited. Our goal is to create a stage where amazing talents can be brought to light, some maybe even hidden deep within those who never really got a chance to explore themselves.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- FACILITIES ENDS -->
+          <!-- CELEBRITY NIGHT BANNER STARTS -->
+              <section id ="srishtiposter" class="section" >
+                <div id="hello-intro" class="d-block text-center" >
+                  <h2 class="text-center" style="font-weight:bold;font-family: 'Yatra One', cursive;">CELEBRITY NIGHT.</h2>
+                    <h3 class="text-center" style="font-weight:bold;font-family: 'Yatra One', cursive;color:#ffcc33;"> The Bollywood Singer ANTRA MITRA is coming, to make the night musical.</h3><br/>
+                </div>
+                <div class = "frame ">
+                  <img src = "images/celebritynight.jpg" style="display: block;margin-left: auto;margin-right: auto;width: 50%;height:700px;border:8px solid #ccff66;" class="img-responsive" >
+                 </div>
+
+              </section>
+
+          <!-- EVENTS STARTS -->
+          <section id="events">
+            <div id="hello-intro"  >
+              <span><h2 class="text-center" style="font-weight:bold;font-family: 'Yatra One', cursive;">EVENTS.</h2></span>
+              <h3 class="text-center" style="font-weight:bold;font-family: 'Yatra One', cursive;color:#ffcc33;">Click on the images below for event details.</h3>
+            </div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <a href="culturalEvents/events.html">
+                    <img src="images/culturalEvents.jpg" class="img-fluid" alt="Responsive image" style="border:4px solid black;width:65%;margin-left:20%;">
+                  </a></div><div class="col-md-6">
+                    <a href="culturalEvents/events.html">
+                      <img src="images/sportsEvents.jpg"  class="img-fluid" style="border:4px solid black;width:65%;margin-left:20%;" alt="Responsive image">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- EVENTS ENDS -->
+
+            <!-- GALLERY STARTS -->
+            <section id="Gallery">
+              <div id="hello-intro" class="d-block text-center" >
+                <h2 class="text-center" style="font-weight:bold;font-family: 'Yatra One', cursive;">GALLERY.</h2>
+              </div>
+              <div class="carousel-gallery" >
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="images/srishti/1.jpg" data-fancybox="gallery">
+                        <div class="image" style="background-image: url(images/srishti/1.jpg);">
+                          <div class="overlay">
+                            <em class="mdi mdi-fullscreen"></em>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="images/srishti/2.jpg" data-fancybox="gallery">
+                        <div class="image" style="background-image: url(images/srishti/2.jpg);">
+                          <div class="overlay">
+                            <em class="mdi mdi-fullscreen"></em>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="images/srishti/3.jpg" data-fancybox="gallery">
+                        <div class="image" style="background-image: url(images/srishti/3.jpg);">
+                          <div class="overlay">
+                            <em class="mdi mdi-fullscreen"></em>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="images/srishti/4.jpg" data-fancybox="gallery">
+                        <div class="image" style="background-image: url(images/srishti/4.jpg);">
+                          <div class="overlay">
+                            <em class="mdi mdi-fullscreen"></em>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="images/srishti/5.jpg" data-fancybox="gallery">
+                        <div class="image" style="background-image: url(images/srishti/5.jpg);">
+                          <div class="overlay">
+                            <em class="mdi mdi-fullscreen"></em>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="images/srishti/6.jpg" data-fancybox="gallery">
+                        <div class="image" style="background-image: url(images/srishti/6.jpg);">
+                          <div class="overlay">
+                            <em class="mdi mdi-fullscreen"></em>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="images/srishti/7.jpg" data-fancybox="gallery">
+                        <div class="image" style="background-image: url(images/srishti/7.jpg);">
+                          <div class="overlay">
+                            <em class="mdi mdi-fullscreen"></em>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="images/srishti/8.jpg" data-fancybox="gallery">
+                        <div class="image" style="background-image: url(images/srishti/8.jpg);">
+                          <div class="overlay">
+                            <em class="mdi mdi-fullscreen"></em>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="images/srishti/9.jpg" data-fancybox="gallery">
+                        <div class="image" style="background-image: url(images/srishti/9.jpg);">
+                          <div class="overlay">
+                            <em class="mdi mdi-fullscreen"></em>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </section>
+            <!-- GALLERY ENDS -->
+
+            <!-- WORDS OF MOTIVATION STARTS -->
+            <div id="motivation">
+              <div id="hello-intro" class="d-block text-center" >
+                <h2 class="text-center" style="font-weight:bold;font-family: 'Yatra One', cursive;">Words of motivation.</h2>
+              </div>
+              <section class="container" >
+                <div class="row active-with-click">
+                  <div class="col-md-4 col-sm-6 col-xs-12">
+                    <article class="material-card Red">
+                      <h2>
+                        <span>J.N.Chouksey </span>
+                        <strong>
+                          <i class="fa fa-fw fa-star"></i>
+                              Chancellor – LNCT Group
+                        </strong>
+                      </h2>
+                      <div class="mc-content">
+                        <div class="img-container">
+                          <img class="img-responsive" src="images/chairman.jpg">
+                        </div>
+                        <div class="mc-description">
+                            " It's a euphoric moment that LNCT Group Of Colleges is organising an Environmental,technical,social,cultural & Sports festival - SRISHTI 2K18. The  prime objective behind this fest is to nurture Mother Earth by bringing all the teachers and students together and also to provide wings to their hidden talents.
+ Students invent new things and make the best use of the technologies to make the Mother Earth more comfortable ,secure and productive.
+On behalf of the entire LNCT Family , I extend my Heartiest gratitude towards all the participants and wish them a great success."
+                        </div>
+                      </div>
+                      <a class="mc-btn-action">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                    </article>
+                  </div>
+                  <div class="col-md-4 col-sm-6 col-xs-12">
+                    <article class="material-card Pink">
+                      <h2>
+                        <span>Poonam Chouksey</span>
+                        <strong>
+                          <i class="fa fa-fw fa-star"></i>
+                              Vice Chairman – LNCT Group
+                        </strong>
+                      </h2>
+                      <div class="mc-content">
+                        <div class="img-container">
+                          <img class="img-responsive" src="images/chairperson.jpg">
+                        </div>
+                        <div class="mc-description">
+                            " I 'm delighted that LNCT Group Of Colleges is hosting SRISHTI 2K18- The Environmental, Technical, Social, Cultural & Sports symposium for recreational gathering.
+It's a blend of more than 40 different events based on environment theme,  so as to conserve and preserve nature and provide students a platform to exhibit their talents implementing the academic knowledge in a more innovative manner.
+We are elated to take the opportunity to make the students aware and encourage them to understand present situation of the environment know how. "
+                        </div>
+                      </div>
+                      <a class="mc-btn-action">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                    </article>
+                  </div>
+                  <div class="col-md-4 col-sm-6 col-xs-12">
+                    <article class="material-card Purple">
+                      <h2>
+                        <span>Dr. Anupam Chouksey</span>
+                        <strong>
+                          <i class="fa fa-fw fa-star"></i>
+                              Secretary – LNCT Group
+                        </strong>
+                      </h2>
+                      <div class="mc-content">
+                        <div class="img-container">
+                          <img class="img-responsive" src="images/secretary.jpg">
+                        </div>
+                        <div class="mc-description">
+                            " Talent remains veiled, unless given a platform."
+The Fest will provide a platform to all the students to showcase their talents and broaden their domains of knowledge and instill in them team spirit .
+SRISHTI 2K18 is basically an Environmental fest with an aim of promoting Sustainable development.
+Promoting environmental awareness through such events boosts energy among all the participants.
+Taking the Legacy forward of working towards being the Best ,I wish SRISHTI 2K18 shall be beneficial to all the students and teachers and shall help them to give their best to the fest .
+                        </div>
+                      </div>
+                      <a class="mc-btn-action">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                    </article>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <!-- WORDS OF MOTIVATION ENDS -->
+
+            <!-- FAQ STARTS -->
+            <section id="faq">
+              <div id="hello-intro" class="d-block text-center" >
+                <h2 class="text-center" style="font-weight:bold;font-family: 'Yatra One', cursive;">FREQUENTLY ASKED QUESTION.</h2>
+              </div>
+              <div class="container" style="width: 100%;">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6">
+                    <div class="tg-faqs">
+                      <div class="tg-sectionhead tg-textalignleft"></div>
+                      <div id="tg-accordion" class="tg-accordion" role="tablist" aria-multiselectable="true">
+                        <div class="tg-panel">
+                          <h4 style="font-weight:bold;font-family: 'Yatra One', cursive;"><span>Q.</span>What is SRISHTI 2K18?</h4>
+                          <div class="tg-panelcontent">
+                            <div class="tg-description">
+                              <p style="font-weight:bold;font-family: 'Yatra One', cursive;">SRISHTI 2K18 is the technical symposium organized by LNCT Bhopal instituted for the enrichment of Engineering and Science. Started with the aim of providing a platform for the Indian student community to assemble, ideate, interact, and share knowledge and develop and showcase their technical prowers.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tg-panel">
+                          <h4 style="font-weight:bold;font-family: 'Yatra One', cursive;"><span>Q.</span>What does SRISHTI 2K18 include?</h4>
+                          <div class="tg-panelcontent">
+                            <div class="tg-description">
+                              <p style="font-weight:bold;font-family: 'Yatra One', cursive;">SRISHTI 2K18 includes the following – <br>
+                                <ul style="font-weight:bold;font-family: 'Yatra One', cursive;">
+                                  <li>Innovative events to test the technical and general knowledge of the participant.</li>
+                                  <li>Intuitive workshops to nurture the abilities of the participant.</li>
+                                  <li>Inceptive initiatives to make society a better place to live in.</li>
+                                  <li>Incredible shows to illustrate and enjoy the beauty of technology.</li>
+                                </ul>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tg-panel">
+                          <h4 style="font-weight:bold;font-family: 'Yatra One', cursive;"><span>Q.</span>When and where is SRISHTI 2K18 going to be held?</h4>
+                          <div class="tg-panelcontent">
+                            <div class="tg-description">
+                              <p style="font-weight:bold;font-family: 'Yatra One', cursive;">SRISHTI 2k18 would be a grandiose 3-day festival to be held from 1st NOV to 3rd NOV 2018 in the campus of LNCT Bhopal.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tg-panel">
+                          <h4 style="font-weight:bold;font-family: 'Yatra One', cursive;"><span>Q.</span>How will a participant get benefited by attending SRISHTI 2K18?</h4>
+                          <div class="tg-panelcontent">
+                            <div class="tg-description">
+                              <p>
+                                <ul style="font-weight:bold;font-family: 'Yatra One', cursive;">
+                                  <li>SRISHTI 2k18 is a platform to test the abilities of a participant when exposed to a physical problem; this makes the participant aware of his strengths and weaknesses.</li>
+                                  <li>SRISHTI 2k18 is a platform for the participants to interact with the industry making them aware of the practical problem faced and the corresponding solution.</li>
+                                  <li>SRISHTI 2k18 is a platform to bring out the innovative child hidden in every student; this refreshes the participant and gives him/her memories to cherish throughout his/her life.</li>
+                                  <li></li>
+                                </ul>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6">
+                    <div class="tg-askquestion not-display">
+                      <div id="tg-accordion" class="tg-accordion" role="tablist" aria-multiselectable="true">
+                        <div class="tg-panel">
+                          <h4 style="font-weight:bold;font-family: 'Yatra One', cursive;"><span>Q.</span>Who can participate in SRISHTI 2K18?</h4>
+                          <div class="tg-panelcontent">
+                            <div class="tg-description">
+                              <p style="font-weight:bold;font-family: 'Yatra One', cursive;"><span>A.</span>Any student (all over INDIA) having a valid student ID card of their college or university will be entertained in the fest. </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tg-panel">
+                          <h4 style="font-weight:bold;font-family: 'Yatra One', cursive;"><span>Q.</span>When will the registration open?</h4>
+                          <div class="tg-panelcontent">
+                            <div class="tg-description">
+                              <p style="font-weight:bold;font-family: 'Yatra One', cursive;"><span>A.</span>Registrations are open. Get your tickets ASAP.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tg-panel">
+                          <h4 style="font-weight:bold;font-family: 'Yatra One', cursive;"><span>Q.</span>Do we get any certificate for participation?</h4>
+                          <div class="tg-panelcontent">
+                            <div class="tg-description">
+                              <p style="font-weight:bold;font-family: 'Yatra One', cursive;"><span>A.</span>Yes, participation certificates will be given to all participants.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tg-panel">
+                          <h4 style="font-weight:bold;font-family: 'Yatra One', cursive;"><span>Q.</span>I don't find my question listed here. What can I do?</h4>
+                          <div class="tg-panelcontent">
+                            <div class="tg-description">
+                              <p style="font-weight:bold;font-family: 'Yatra One', cursive;"><span>A.</span>You can always contact us at <a href="mailto:srishtiecofest@lnct.ac.in" target="_blank">srishtiecofest@lnct.ac.in.</a> We would be more than happy to help you.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- FAQ ENDS -->
+            <section class="testimonials" id="testimonials">
+              <div id="hello-intro" class="d-block text-center" >
+                <h2 class="text-center" style="font-weight:bold;font-family: 'Yatra One', cursive;">Testimonials.</h2>
+              </div>
+              <div class="customer-feedback">
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col-sm-offset-2 col-sm-8">
+                      <div>
+                        <h2 class="section-title">What Clients Say</h2>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+                      <div class="feedback-slider">
+
+
+                        <div class="feedback-slider-item">
+                          <img src="images/testimonials/test3.png" class="center-block img-circle" alt="Customer Feedback">
+                          <h3 class="customer-name">Mr Ankit Jaiswal </h3>
+                          <p>"I have always felt that I was so lucky to be a student at LNCT, and not at any other private institute. The thing I admire the most about LNCT is the support I received from everyone at the college. I wouldn't have been able to achieve what I have achieved without that caring environment."</p>
+                          <span class="light-bg customer-rating" data-rating="5">
+                            5
+                            <i class="fa fa-star"></i>
+                          </span>
+                        </div>
+
+
+
+                        <div class="feedback-slider-item">
+                          <img src="images/testimonials/test1.png" class="center-block img-circle" alt="Customer Feedback">
+                          <h3 class="customer-name">Ms Kalpana Chouksey</h3>
+                          <p>It was a great time we spent in LNCT. LNCT has very wonderful faculty and they are very cooperative and campus environment is very positive. Training and placement department continuously providing assistance regarding the placement. CSE department has made the best efforts to provide all the facilities. </p>
+                          <span class="light-bg customer-rating" data-rating="4">
+                            4
+                            <i class="fa fa-star"></i>
+                          </span>
+                        </div>
+
+
+
+                        <div class="feedback-slider-item">
+                          <img src="images/testimonials/test2.png" class="center-block img-circle" alt="Customer Feedback">
+                          <h3 class="customer-name">Mr Anshul Goyal </h3>
+                          <p>"I can positively say LNCT has made me a better person. It has helped me develop a positive attitude towards my studies and discover more about myself. Teachers are very caring and interested in students’ well-being. They make sure every class is fun, educational and interactive."</p>
+                          <span class="light-bg customer-rating" data-rating="5">
+                            5
+                            <i class="fa fa-star"></i>
+                          </span>
+                        </div>
+
+
+                      </div>
+
+
+                      <div class="feedback-slider-thumb hidden-xs">
+                        <div class="thumb-prev">
+                          <span>
+                            <img src="images/testimonials/test3.png" alt="Customer Feedback">
+                          </span>
+                          <span class="light-bg customer-rating">
+                            5
+                            <i class="fa fa-star"></i>
+                          </span>
+                        </div>
+
+                        <div class="thumb-next">
+                          <span>
+                            <img src="images/testimonials/test1.png" alt="Customer Feedback">
+                          </span>
+                          <span class="light-bg customer-rating">
+                            4
+                            <i class="fa fa-star"></i>
+                          </span>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- TESTIMONIALS ENDS -->
+            <!-- SRISHTI BANNER STARTS -->
+            <section id ="news" class="section">
+              <div id="hello-intro" class="d-block text-center" >
+                <h2 class="text-center" style="font-weight:bold;font-family: 'Yatra One', cursive;">SRISHTI Headlines.</h2>
+              </div>
+              <div class = "frame ">
+                <img src = "images/news.jpg" style="display: block;margin-left: auto;margin-right: auto;width: 90%;height:500px;border:8px solid #ccff66;" class="img-responsive" >
+
+              </div>
+            </section>
+            <!-- SPONSORS SECTION STARTS -->
+  <section class="client" id="client">
+    <div id="hello-intro" class="d-block text-center" >
+      <h2 class="text-center" style="font-weight:bold;font-family: 'Yatra One', cursive;">Our Partners.</h2>
+    </div>
+  <div class="container">
+    <div class="row">
+      <div class="carousel-client">
+        <div class="slide"><img src="images/me.jpg"></div>
+        <div class="slide"><img src="images/endeavor.jpg"></div>
+        <div class="slide"><img src="images/dj.jpg"></div>
+        <div class="slide"><img src="images/fp.jpg"></div>
+        <div class="slide"><img src="images/myfm.jpg"></div>
+        <div class="slide"><img src="images/radio.jpg"></div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- SPONSORS SECTION ENDS  -->
+  <!--People Section STARTSS-->
+ <!-- <section id="core-team" >
+   <div id="hello-intro" class="d-block text-center" >
+     <h2 class="text-center">Core Team.</h2>
+   </div>
+
+     <div id="team-slider" class="carousel slide" data-ride="carousel" style="min-height: 80vh;">
+         <ol class="carousel-indicators">
+             <li data-target="#team-slider" data-slide-to="0" class="active" style="background-color: #000;"></li>
+             <li data-target="#team-slider" data-slide-to="1" style="background-color: #000;"></li>
+             <li data-target="#team-slider" data-slide-to="2" style="background-color: #000;"></li>
+             <li data-target="#team-slider" data-slide-to="3" style="background-color: #000;"></li>
+             <li data-target="#team-slider" data-slide-to="4" style="background-color: #000;"></li>
+             <li data-target="#team-slider" data-slide-to="5" style="background-color: #000;"></li>
+             <li data-target="#team-slider" data-slide-to="6" style="background-color: #000;"></li>
+         </ol>
+         <div class="carousel-inner" role="listbox">
+             <div class="item active">
+                 <div class="row">
+                     <!-- <div class="col-md-2"></div>
+                     <div class="col-md-3 col-sm-12">
+                         <section id="team">
+                             <center>
+                                 <img src="images/akshay.jpg" id="team-img">
+                                 <h4 style="color:orange;">Ankit Agrawal</h4>
+                                 <h5 style="color:orange;">+91-7870760367</h5>
+                             </center>
+                         </section>
+                     </div>
+
+                     <div class="col-md-3 col-sm-12">
+                         <section id="team">
+                             <center>
+                                 <img src="images/akshay.jpg" id="team-img">
+                                 <h4  style="color:orange;">Aman Sharma</h4>
+                                 <h5  style="color:orange;">+91-9931767946</h5>
+                             </center>
+                         </section>
+                     </div>
+                     <div class="col-md-3 col-sm-12">
+                         <section id="team">
+                             <center>
+                                 <img src="images/akshay.jpg" id="team-img">
+                                 <h4>Aman Sharma</h4>
+                                 <h5>+91-9931767946</h5>
+                             </center>
+                         </section>
+                     </div>
+                     <div class="col-md-3 col-sm-12">
+                         <section id="team">
+                             <center>
+                                 <img src="images/akshay.jpg" id="team-img">
+                                 <h4>Aman Sharma</h4>
+                                 <h5>+91-9931767946</h5>
+                             </center>
+                         </section>
+                     </div>
+
+                 </div>
+                 <br><br>
+
+                 <div class="carousel-caption d-none d-md-block">
+                     <h4 class="team-name"></h4>
+                     <h5 style="color: #000;"></h5>
+                 </div>
+             </div>
+
+
+             <div class="item">
+                 <div class="row">
+                     <div class="col-md-2"></div>
+                     <div class="col-md-3 col-sm-12">
+                         <section id="team">
+                             <center>
+                                 <img src="images/akshay.jpg" id="team-img">
+                                 <h4>Anuj Sinha</h4>
+                                 <h5>+91-8002823738</h5>
+                             </center>
+                         </section>
+                     </div>
+                     <div class="col-md-2"></div>
+                     <div class="col-md-3 col-sm-12">
+                         <section id="team">
+                             <center>
+                                 <img src="images/akshay.jpg" id="team-img">
+                                 <h4>Saakshi Srivastava</h4>
+                                 <h5>+91-9456178988</h5>
+                             </center>
+                         </section>
+                     </div>
+                     <div class="col-md-2"></div>
+                 </div>
+                 <br><br>
+
+
+                 <div class="carousel-caption d-none d-md-block">
+                     <h4 class="team-name">Publicity Team</h4>
+                 </div>
+             </div>
+
+             <div class="item">
+                 <div class="row">
+                     <div class="col-md-2"></div>
+                     <div class="col-md-3 col-sm-12">
+                         <section id="team">
+                             <center>
+                                 <img src="images/akshay.jpg" id="team-img">
+                                 <h4>Nithash Majumdar</h4>
+                                 <h5>+91-8294275584</h5>
+                             </center>
+                         </section>
+                     </div>
+                     <div class="col-md-2"></div>
+                     <div class="col-md-3 col-sm-12">
+                         <section id="team">
+                             <center>
+                                 <img src="images/akshay.jpg" id="team-img">
+                                 <h4>Ayush Raj</h4>
+                                 <h5>+91-9470349604</h5>
+                             </center>
+                         </section>
+                     </div>
+                     <div class="col-md-2"></div>
+                 </div>
+                 <br><br>
+
+
+                 <div class="carousel-caption d-none d-md-block">
+                     <h4 class="team-name">Creative Team</h4>
+                 </div>
+             </div>
+             <div class="item">
+                 <div class="row">
+                     <div class="col-md-2"></div>
+                     <div class="col-md-3 col-sm-12">
+                         <section id="team">
+                             <center>
+                                 <img src="images/akshay.jpg" id="team-img">
+                                 <h4>Aakarshit Uppal</h4>
+                                 <h5>+91-9939311767</h5>
+                             </center>
+                         </section>
+                     </div>
+                     <div class="col-md-2"></div>
+                     <div class="col-md-3 col-sm-12">
+                         <section id="team">
+                             <center>
+                                 <img src="images/akshay.jpg" id="team-img">
+                                 <h4>Paritosh Sharma</h4>
+                                 <h5>+91-7292887882</h5>
+                             </center>
+                         </section>
+                     </div>
+                     <div class="col-md-2"></div>
+                 </div>
+                 <br><br>
+
+
+
+
+                 <div class="carousel-caption d-none d-md-block">
+                     <h4 class="team-name">Events Team</h4>
+                 </div>
+             </div>
+
+             <div class="item">
+                 <div class="row">
+                     <div class="col-md-2"></div>
+                     <div class="col-md-3 col-sm-12">
+                         <section id="team">
+                             <center>
+                                 <img src="images/akshay.jpg" id="team-img">
+                                 <h4>Anand Kumar</h4>
+                                 <h5>+91-9934319547</h5>
+                             </center>
+                         </section>
+                     </div>
+                     <div class="col-md-2"></div>
+                     <div class="col-md-3 col-sm-12">
+                         <section id="team">
+                             <center>
+                                 <img src="images/akshay.jpg" id="team-img">
+                                 <h4>Pooja Saraf</h4>
+                                 <h5>+91-8294499583</h5>
+                             </center>
+                         </section>
+                     </div>
+                     <div class="col-md-2"></div>
+                 </div>
+                 <br><br>
+
+
+                 <div class="carousel-caption d-none d-md-block">
+                     <h4 class="team-name">Resource Team</h4>
+                 </div>
+             </div>
+
+             <div class="item">
+                 <div class="row">
+                     <div class="col-md-2"></div>
+                     <div class="col-md-3 col-sm-12">
+                         <section id="team">
+                             <center>
+                                 <img src="images/akshay.jpg" id="team-img">
+                                 <h4>Aashray Agarwal</h4>
+                                 <h5>+91-8294263760</h5>
+                             </center>
+                         </section>
+                     </div>
+                     <div class="col-md-2"></div>
+                     <div class="col-md-3 col-sm-12">
+                         <section id="team">
+                             <center>
+                                 <img src="images/akshay.jpg" id="team-img">
+                                 <h4>Satyarth Ojha</h4>
+                                 <h5>+91-9454914706</h5>
+                             </center>
+                         </section>
+                     </div>
+                     <div class="col-md-2"></div>
+                 </div>
+                 <br><br>
+
+
+                 <div class="carousel-caption d-none d-md-block">
+                     <h4 class="team-name">Hospitality Team</h4>
+                 </div>
+             </div>
+             <div class="item">
+                 <div class="row">
+                     <div class="col-md-2"></div>
+                     <div class="col-md-3 col-sm-12">
+                         <section id="team">
+                             <center>
+                                 <img src="images/akshay.jpg" id="team-img">
+                                 <h4>Sushant Kumar Gupta</h4>
+                                 <h5>+91-8603204482</h5>
+                             </center>
+                         </section>
+                     </div>
+                     <div class="col-md-2"></div>
+                     <div class="col-md-3 col-sm-12">
+                         <section id="team">
+                             <center>
+                                 <img src="images/akshay.jpg" id="team-img">
+                                 <h4>Ashank Anshuman</h4>
+                                 <h5>+91-9631804732</h5>
+                             </center>
+                         </section>
+                     </div>
+                     <div class="col-md-2"></div>
+                 </div>
+                 <br><br>
+
+
+                 <div class="carousel-caption d-none d-md-block">
+
+                 </div>
+             </div>
+
+         </div><br><br>
+         <a class="left carousel-control" href="#team-slider" role="button" data-slide="prev" style="color: white;">
+             <span class="glyphicon-chevron-right fas fa-chevron-left" aria-hidden="true"></span>
+             <span class="sr-only">Previous</span>
+         </a>
+         <a class="right carousel-control" href="#team-slider" role="button" data-slide="next" style="color: white;">
+             <span class="glyphicon-chevron-right fas fa-chevron-right" aria-hidden="true"></span>
+             <span class="sr-only">Next</span>
+         </a>
+     </div>
+
+
+
+ </section> -->
+   <!--People Section ENDS-->
+   <section class="coreteam" id="coreteam">
+     <div id="hello-intro" class="d-block text-center" >
+       <h2 class="text-center" style="font-weight:bold;font-family: 'Yatra One', cursive;">CORE TEAM.</h2>
+        <h3 style="font-weight:bold;font-family: 'Yatra One', cursive;color: #ffcc33;">Want to see our Hardworking team? please click the button below.</h3>
+     </div>
+     <div class="text-center">
+     <a href="coreteam/index.html" class="btn btn-primary btn-lg text-center">CORE TEAM.</a>
+     </div>
+  </section>
+<!-- MAP STARTS -->
+            <section id="reach">
+              <div id="hello-intro" class="d-block text-center" >
+                <h2 class="text-center" style="font-weight:bold;font-family: 'Yatra One', cursive;">Reach us.</h2>
+              </div>
+              <div style="width: 100%;">
+                <iframe width="100%" height="350" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=23.2514, 77.5247&amp;q=LNCT%20Campus%2C%20Kalchuri%20Nagar%2C%20Raisen%20Road%20Bhopal%2C%20Madhya%20Pradesh%20(M.P.)+(LNCT%20Bhopal)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              </div>
+
+            </section>
+            <!-- MAP ENDS -->
+            <!--  FOOTER STARTS -->
+            <footer id="footer" style="border-top: 2px solid #6dd5ed ;">
+              <h2 class="text-center" style="font-weight:bold;font-family: 'Yatra One', cursive; font-weight: 700;font-size: 42px;color:#fff;">SRISHTI 2K18</h2>
+              <a href="https://www.instagram.com/srishti2k18/"><span class="fa fa-instagram" style="font-size:25px;margin-right:3%;color:white;"></span></a>
+              <a href="https://www.facebook.com/Srishti2k18LNCTGroup/" target="_blank" style="font-size:25px;margin-right:3%;color:white;"><span class="fa fa-facebook"></span></a>
+              <a href="https://www.youtube.com/channel/UCpqJSyM0pvp-NXa60PDHj-g" target="_blank" style="font-size:25px;margin-right:3%;color:white;"><span class="fa fa-youtube"></span></a>
+              <a href="mailto:srishtiecofest@lnct.ac.in" ><span class="fa fa-google-plus" style="font-size:25px;color:white;"></span></a><br><br>
+              <p class="no-margin">Copyright&copy; LNCT GROUP, 2018. <br>Design and Developed by Computer Science & Engineering, LNCT Bhopal</p>
+              <a id="coun" href="#HOME" target="_blank" class=" uruna" style="color:white;">You are our &nbsp; <img src="https://www.reliablecounter.com/count.php?page=lnct.ac.in15073424&digit=style/plain/5/&reloads=0" alt="" title="" border="0"> &nbsp; number Visitor</a><br />
+              <script>
+              window.onscroll = function() {scrollFunction()};
+              function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  document.getElementById("myBtn").style.display = "block";
+                } else {
+                  document.getElementById("myBtn").style.display = "none";
+                }
+              }
+              function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+              }
+            </script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="js/jquery.js"></script>
+            <script type="text/javascript" src="js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+            <script type="text/javascript" src="js/jquery.jCounter.js"></script>
+            <script type="text/javascript" src="js/waypoints.min.js"></script>
+            <script type="text/javascript" src="js/jquery.colorbox.js"></script>
+            <script type="text/javascript" src="js/smoothscroll.js"></script>
+            <script type="text/javascript" src="js/gmap3.js"></script>
+            <script type="text/javascript" src="js/custom.js"></script>
+            <script src="js/tilt.jquery.js"></script>
+            <script data-cfasync="false" src="js/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
+            <script src="js/main.js"></script>
+            <script src="js/main1.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery.countdown.min1.js"></script>
+            <script src="js/smooth-scroll1.js"></script>
+            <script src="js/wow1.js"></script>
+            <script src="js/owl.carousel.min1.js"></script>
+            <script src="js/jquery.slicknav1.js"></script>
+            <script src="js/nivo-lightbox1.js"></script>
+            <script src="js/form-validator.min.js"></script>
+            <script src="js/contact-form-script.js"></script>
+            <script src="js/color-switcher.js"></script>
+            <script src="js/main1.js"></script>
+            <!-- <script type="text/javascript" src="js/jquery.mapit1.min.js"></script> -->
+            <script src="js/initializers1.js"></script>
+            <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <script type="text/javascript" src="js/cards.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+            <script type="text/javascript" src="js/gallery.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <script src="https://thenahid.com/owl.carousel.min.js"></script>
+
+<script src="js/test.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.js"></script>
+<script src="js/sponsor.js"></script>
+            <script>
+            function themeAccordion() {
+             jQuery('.tg-panelcontent').hide();
+             jQuery('.tg-accordion h4:first').addClass('active').next().slideDown('slow');
+             jQuery('.tg-accordion h4').on('click',function() {
+               if(jQuery(this).next().is(':hidden')) {
+                 jQuery('.tg-accordion h4').removeClass('active').next().slideUp('slow');
+                 jQuery(this).toggleClass('active').next().slideDown('slow');
+               }
+             });
+           }
+           themeAccordion();
+         </script>
+         <script>
+         $(document).ready(function(){
+           function scrollToElement(selector) {
+             $('html,body').animate({
+               scrollTop: $(selector).offset().top
+             },2000);
+           };
+           $(document).on('click', 'a.uruna', function () {
+             scrollToElement($(this).attr('href'));
+           });
+         });
+       </script>
+       <script>
+         var preloader = document.getElementById('loading');
+         function preloaderFunction(){
+           preloader.style.display='none';
+         }
+       </script>
+   </body>
+   <!-- /*
+   Name:LNCT SRISHTI 2K18
+   Version:1.4
+   Author:AKSHAY & SUMIT
+   */
+-->
+</html>

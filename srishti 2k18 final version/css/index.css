@@ -1,0 +1,334 @@
+
+
+#team {
+  position: relative;
+}
+
+#team > center > img {
+  position: relative;
+  opacity: 1;
+  border-radius: 50%;
+  border: 2px solid #000;
+  border-radius : 50%;
+  /* margin-top: 2vw; */
+  margin-bottom: 2vw;
+  height: 18vw;
+  width: 18vw;
+}
+
+
+
+@media screen and (min-width:992px){
+  .team-text {
+    font-size: 2vw;
+    padding-left: 21vw;
+    padding-top: 8.5vw;
+  }
+
+}
+
+@media screen and (max-width:992px){
+  .team-text {
+    font-size: 3vw;
+    padding-left: 19vw;
+    padding-top: 6vw;
+  }
+}
+
+@media screen and (max-width:767px){
+  .team-text {
+    font-size: 3vw;
+    padding-left: 45vw;
+    padding-top: 6vw;
+  }
+}
+
+@media screen and (max-width:500px){
+  .team-text {
+    font-size: 3vw;
+    padding-left: 45vw;
+    padding-top: 6vw;
+  }
+}
+
+@media screen and (max-width:300px){
+  .team-text {
+    font-size: 3vw;
+    padding-left:45vw;
+    padding-top: 6vw;
+  }
+}
+
+
+
+
+#landing {
+  height: 100vh !important;
+  width: 100% !important;
+  background-image: url("../images/landing-back2.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-position: fixed;
+  left: 0px;
+}
+
+.icon-color {
+  color: #FFF;
+}
+
+.curves {
+  border-radius: 20px;
+  border : 5px solid red;
+}
+.curvy-border {
+  border-radius : 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+
+
+
+
+
+
+/*img {
+  max-width: 100%;
+}
+
+body {
+  background: #f0f0f0;
+  font-size: 17px;
+  line-height: 1.4;
+  font-family: 'Jaldi', sans-serif;
+}*/
+
+* {
+  -moz-transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, -moz-transform;
+  -o-transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, -o-transform;
+  -webkit-transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, -webkit-transform;
+  transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, transform;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+
+/* nan hide */
+
+
+/* date in landing page 26-28 oct. */
+#date-style {
+  color : #FFF;
+}
+
+
+/* Core team carousel caption style */
+.team-name{
+  color: #000;
+}
+
+/* heading like About, mascot, prizes and coreTeam */
+
+.loading-hide
+{
+  display: none;
+}
+
+/* The whole landing page */
+#landing {
+  display: none;
+}
+
+
+/* Download buttons at the landing page */
+.flex-buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 5vh;
+  flex-wrap: wrap;
+}
+
+#left-button {
+  margin: 2.7vw;
+}
+
+#right-button {
+  margin: 2.7vw;
+}
+
+/* The gif at the landing page for scrolling down */
+.register {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background : transparent;
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+  z-index: 100;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+/* Prizes cards caption styling */
+.prize-caption {
+  background: linear-gradient(to top, #1C5274, #17253F);
+  color: #FFF;
+}
+
+.know-more h5{
+  color: white;
+  position: relative;
+  top: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400 !important;
+}
+
+.landing-links {
+  padding: 30px 15px;
+}
+
+.landing-links a {
+  text-decoration: none;
+  color: rgb(223, 223, 223);
+  padding: 0px 10px;
+  z-index: 5 !important;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .landing-links a {
+    padding: 0px 5px;
+    z-index: 5 !important;
+    cursor: pointer;
+    font-size: 80%;
+  }
+
+  .landing-links {
+    padding: 30px 5px;
+  }
+}
+
+.landing-links a:hover {
+  color: #16a085;
+}
+
+.timeline-badge {
+  background-color: #182835 !important;
+}
+
+.timeline-heading {
+  text-align: center;
+  color: #16a085 !important;
+}
+
+.timeline-heading p{
+  color: rgb(43, 43, 43) !important;
+}
+
+.timeline-title {
+  color: rgb(32, 32, 32) !important;
+}
+
+.icon-spacing {
+  padding-right: 1vw;
+  padding-left: 1vw;
+}
+
+#team h4 {
+  color: #2d485c;
+}
+
+}
+
+
+
+
+#success-msg p {
+  padding: 20px;
+  font-size: 90%;
+}
+
+#danger-msg p {
+  padding: 20px;
+  font-size: 90%;
+}
+
+@media screen and (min-width: 768px)
+{
+  .vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+  }
+
+}
+
+
+.on-screen {
+  z-index: 1000;
+  font-size: 100%;
+  border: 2px solid white;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: rgba(97, 97, 97, 0.322);
+  width: 200px;
+  text-align: center;
+
+}
+.carousel-indicators .active{ background: #31708f; }
+.content{ margin-top: 2vh; font-size: 12px; }
+.adjust1{ float: left; width:100%; min-height: 60vh; }
+.adjust2{ margin:0; }
+.carousel-indicators li{ border :1px solid #ccc; }
+.carousel-control{ color:#31708f; width:5%; }
+.carousel-control:hover, .carousel-control:focus{ color:#31708f; }
+.carousel-control.left, .carousel-control.right { background-image: none; }
+.media-object{ margin:auto; margin-top:15%; }
+.item {min-height: 50vh;}
+.caption1 {margin-top: 2vh; text-justify: auto;}
+@media screen and (max-width: 768px) { .media-object{ margin-top:0; } }
+
+
+@media screen and (min-width: 768px)
+{
+  .club-logos {
+    width: 7%;
+  }
+
+  .acm-logo {
+    width: 3%;
+  }
+
+  .club-icons {
+    top: -20px;
+  }
+
+}
+
+@media screen and (max-width: 768px)
+{
+  .club-logos {
+    width: 20%;
+  }
+
+  .acm-logo {
+    width: 10%;
+  }
+
+  .club-icons {
+    top: -15px;
+  }
+}

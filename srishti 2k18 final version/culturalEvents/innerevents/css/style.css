@@ -1,0 +1,199 @@
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+a{
+  text-decoration: none;
+}
+.ary a{
+  color: black;
+}
+#intro {
+    background: url("../img/quark-min.JPG")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.view10 {
+    background: url('https://mdbootstrap.com/img/Photos/Others/images/89.jpg')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.top-nav-collapse {
+    background-color: #24355C;
+}
+
+@media (max-width: 750px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #24355C;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #24355C;
+  }
+}
+.img {
+    position: relative;
+    float: left;
+    width:  425px;
+    height: 425px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+.empty10{
+	height: 425px;
+}
+.qriosity {
+    background: url("../img/image1.jpeg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 900px;
+}
+
+/*Campus Ambassador Programme*/
+
+/* Required for full background image */
+.ben1{
+  
+  outline-style: solid; 
+  height: 270px; 
+  padding: 4%;
+}
+.ben2{
+  
+  outline-style: solid;
+  height: 270px; 
+  padding: 6%;
+}
+html,
+body,
+header,
+.view10 {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view10 {
+    height: 1200px;
+  }
+}
+
+@media (max-width: 990px) {
+  .content {
+    padding-top: 15%; 
+  }
+}
+@media (max-width: 770px) {
+  .view10 {
+    height: 1600px; 
+  }
+}
+@media (max-width: 200px) {
+  .view10 {
+    height: 1500px;
+  }
+}
+
+@media (max-width: 520px) {
+  .navfont {
+    font-size: 13px;
+  }
+}
+@media (max-width: 372px) {
+  .navfont {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .ben1  {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1200px) {
+  .ben2 {
+    font-size: 13px;
+  }
+}
+.top-nav-collapse {
+  background-color: #39448c !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #39448c !important;
+  }
+}
+
+h6 {
+  line-height: 1.7;
+}
+
+/*Sponsors*/
+.t19 {
+    background: url('img/twenty19.jpg')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.logo{
+  width: 70%;
+  padding-right: 10%;
+  padding-left: 35%;
+}
+
+
+/*effect-box*/
+a.effect-box:after,
+a.effect-box:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 80px;
+  width: 100%;
+  margin-top: 1px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  
+}
+
+a.effect-box:before {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  -webkit-transform: scale(1,0);
+  transform: scale(1,0);
+}
+
+a.effect-box:after {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+a.effect-box:hover:after,
+a.effect-box:hover:before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
