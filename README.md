@@ -5,6 +5,7 @@ This is the website of SRISHTI2K18, Annual Tech Fest of LNCT Bhopal. Website is 
 Follow the below steps:  
 ```
 $ git clone
-$ cd srishti2k18
+$ cd srishti2k18  
+$ cd srishti\ 2k18\ final\ version/
 ```  
 Then open the index.html page and make changes.
