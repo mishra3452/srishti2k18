@@ -1,7 +1,8 @@
 # SRISHTI 2K18
-This is the website of SRISHTI2K18, Annual Tech Fest of LNCT Bhopal. Website is made by me and Akshay(https://github.com/Akshay-911). The website is live at : http://www.srishti2k18.in/  
+This is the website of SRISHTI2K18, Annual Tech Fest of LNCT Bhopal. Website is made by me and Akshay(https://github.com/Akshay-911). The website was live at in  2018 : http://www.srishti2k18.in/  
 
-### Want to use the website for learning purpose?  
+
+### You can configure the website and use it as a template for learning purpose?  
 Follow the below steps:  
 ```
 $ git clone https://github.com/mishra3452/srishti2k18.git  
