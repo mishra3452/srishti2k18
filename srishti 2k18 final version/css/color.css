@@ -78,3 +78,15 @@ input:focus,
 			Theme Border Color
 =============================================*/
 {border-color: #f6730d;}
+
+
+
+#top {
+    background-color: #ccc;
+    padding: 20px
+}
+
+.intro {
+    color: red;
+    font-weight: bold;
+}
